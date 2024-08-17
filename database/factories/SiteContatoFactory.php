@@ -11,7 +11,7 @@ $factory->define(SiteContato::class, function (Faker $faker) {
         'telefone' => $faker->tollFreePhoneNumber,
         'email' => $faker->unique()->email, // o unique() é para definirmos o email como único por
                                         // registro
-        'motivo_contato' => $faker->numberBetween(1, 3),
+        'motivo_contatos_id' => $faker->numberBetween(1, 3),
         'mensagem' => $faker->text(200),
     ];
 });
